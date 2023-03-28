@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Item details</title>
+  <link rel="stylesheet" href="item.css">
+</head>
+<body>
+  <section id="sec-first">
+    <div class="inner-container">
+      <div class="img-container">
+      <img id="main-img" src="Images/img/products/n1.jpg" alt="item-img">
+    </div>
+    <div class="desc-container">
+      <p class="nav">Home / T-shirt</p>
+      <h1 class="title">Fabric Printed T-shirt</h1>
+      <div class="price">$78.00</div>
+      <div class="select-list">
+      <select name="size" id="size">
+        <option value="">Select Size</option>
+        <option value="m">M</option>
+        <option value="l">L</option>
+        <option value="xl">XL</option>
+        <option value="xxl">XXL</option>
+      </select> <span class="sizeWarn">Please select a size</span>
+      <span class="quantityWarn">Quantity cannot be 0 or negative</span>
+    </div>
+      <input type="number" name="quantity" id="quantity" value="1">
+      <button class="addToCart">ADD TO CART</button>
+      <h4>Product Details</h4>
+      <p class="sm-desc">Comfortable, casual and loose fitting, our heavyweight dark color t-shirt will quickly become one of your favorites. Made from 100% cotton, it's unisex and wears well on anyone and everyone. We’ve double-needle stitched the bottom and sleeve hems for extra durability. Select a design from our marketplace or customize it to make it uniquely yours!</p>
+    </div>
+    </div>
+  </section>
+  <div class="sec-second">
+    <h2>Related Products</h2>
+    <div class="related-prod-container">
+      <div class="prod1 prod"><img src="./images/img/products/f2.jpg" alt=""></div>
+      <div class="prod2 prod"><img src="./images/img/products/f3.jpg" alt=""></div>
+      <div class="prod3 prod"><img src="./images/img/products/f4.jpg" alt=""></div>
+      <div class="prod4 prod"><img src="./images/img/products/f5.jpg" alt=""></div>
+    </div>
+  </div>
+  <script src="item.js"></script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(24, 24, 24);
+    user-select: none;
+}
+
+.inner-container {
+    background: rgb(211, 211, 211);
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 3rem;
+}
+
+.desc-container {
+    max-width: 60%;
+    padding: 2rem;
+}
+
+.img-container img {
+    width: 90%;
+    height: auto;
+    min-width: 300px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 1rem;
+    pointer-events: none;
+}
+
+.nav {
+    font-size: 0.9rem;
+    color: #777;
+    line-height: 4;
+}
+
+.title {
+    font-size: clamp(1.4rem, 4.5vw, 3rem);
+    line-height: 2;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: rgb(0, 59, 0);
+}
+
+#size {
+    font-size: 0.8rem;
+    padding: 0.6rem 0.2rem;
+    margin: 1rem 0;
+    border-radius: 0.2rem;
+}
+
+#size:focus {
+    outline: none;
+}
+
+#quantity {
+    padding: 0.6rem 0.4rem;
+    width: 6%;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    transition:  0.4s all ease;
+    border-radius: 0.2rem;
+    border: 1px solid rgb(136, 136, 136);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#quantity:focus {
+    outline: none;
+}
+
+.addToCart {
+    padding: 0.6rem;
+    margin: 0 0.4rem;
+    background: rgb(180, 117, 0);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid #fff;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    border-radius: 0.2rem;
+    transition: 0.5s all ease;
+}
+
+.addToCart:hover {
+    background: rgb(145, 94, 0);
+}
+
+h4 {
+    margin-bottom: 1rem;
+}
+
+.sm-desc {
+    color: #555;
+}
+
+.sec-second {
+    min-height: 70vh;
+    height: auto;
+    background: rgb(190, 190, 190);
+}
+
+.sec-second h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 4;
+}
+
+.related-prod-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.prod {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+}
+
+.prod img {
+    width: 80%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius: 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.prod img:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 930px) {
+    .inner-container {
+        flex-direction: column;
+    }
+    .img-container img {
+        width: 40%;
+    }
+    .desc-container {
+        max-width:max-content;
+    }
+    #quantity {
+        width: 10%;
+    }
+}
+
+.active {
+    background: rgb(0, 189, 0);
+    color: #000;
+}
+
+.active svg {
+    margin: 0 0.4rem;
+}
+
+.sizeWarn {
+    color: red;
+    margin: 0 0.7rem;
+    display: none;
+}
+
+.quantityWarn {
+    color: red;
+    margin: 0 0.7rem;
+    display: none;
+}
+
+.active:hover {
+    background: rgb(0, 138, 0);
+}
